@@ -22,7 +22,9 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@unclefix/shared": ["../shared/schemas/index.ts"],
+      "@unclefix/shared/*": ["../shared/schemas/*"]
     }
   },
   "include": ["src"]

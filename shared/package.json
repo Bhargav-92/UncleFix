@@ -1,0 +1,20 @@
+{
+  "name": "@unclefix/shared",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./schemas/index.ts",
+  "types": "./schemas/index.ts",
+  "exports": {
+    ".": "./schemas/index.ts",
+    "./schemas/*": "./schemas/*.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}
