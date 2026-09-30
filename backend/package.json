@@ -9,9 +9,10 @@
     "build": "tsc",
     "start": "node dist/server.js",
     "typecheck": "tsc --noEmit",
-    "prisma:generate": "prisma generate",
-    "prisma:migrate": "prisma migrate dev",
-    "prisma:studio": "prisma studio",
+    "prisma:generate": "prisma generate --schema prisma/schema",
+    "prisma:migrate": "prisma migrate dev --schema prisma/schema",
+    "prisma:studio": "prisma studio --schema prisma/schema",
+    "prisma:validate": "prisma validate --schema prisma/schema",
     "prisma:seed": "tsx prisma/seed.ts"
   },
   "dependencies": {
@@ -36,6 +37,7 @@
     "typescript": "^5.7.3"
   },
   "prisma": {
+    "schema": "prisma/schema",
     "seed": "tsx prisma/seed.ts"
   }
 }
